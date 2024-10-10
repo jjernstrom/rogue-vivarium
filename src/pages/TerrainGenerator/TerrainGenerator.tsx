@@ -1,4 +1,4 @@
-import { Box, createTheme, CssBaseline, Stack, ThemeProvider } from '@mui/material';
+import { Box, createTheme, CssBaseline, Link, Stack, ThemeProvider } from '@mui/material';
 import { Stage } from '@pixi/react';
 import { Vector } from './types';
 import { Terrain } from './Terrain';
@@ -28,7 +28,19 @@ return (
   <main style={{display:'flex', justifyContent:'center'}}>
     <Box maxWidth="1200px" display='flex' justifyContent='center'>
     <Stack margin='auto'>
-      <div>Terrain Generator</div>
+    <Box>
+      <Stack direction='row'>
+        <Stack>
+          <h1 style={{marginBottom:0}}>Terrain Generator</h1>
+          <h3 style={{marginTop:0}}>Rogue Vivarium</h3>
+        </Stack>
+        <Stack margin='auto' marginRight={0}> 
+          <Link href="https://github.com/jjernstrom/rogue-vivarium">GitHub: jjernstrom/rogue-vivarium</Link>
+          <Link href="https://www.linkedin.com/in/jeffrey-jernstrom/">LinkedIn: Jeffrey Jernstrom</Link>
+          <Link href="http://www.jjernstrom.com">Portfolio</Link> 
+        </Stack>
+      </Stack>
+    </Box>
       <Stage width={stageSize.x} height={stageSize.y}>
         <Terrain 
           generate={generate} 

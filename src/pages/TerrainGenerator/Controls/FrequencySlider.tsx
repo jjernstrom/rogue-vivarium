@@ -1,4 +1,4 @@
-import { Slider } from "@mui/material"
+import { Slider, Stack } from "@mui/material"
 
 interface Props {
   setFrequency: React.Dispatch<React.SetStateAction<number>>,
@@ -16,7 +16,7 @@ export const FrequencySlider = ({setFrequency, frequency}: Props) => {
   }
   
   return (
-    <div>
+    <Stack width="60%" margin='auto'>
     <div>Noise Frequency</div>
     <Slider 
       step={0.02}
@@ -30,7 +30,7 @@ export const FrequencySlider = ({setFrequency, frequency}: Props) => {
       max={1}
       marks={marks}
     />
-    </div>
+    </Stack>
   );
 }
 

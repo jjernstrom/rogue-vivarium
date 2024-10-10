@@ -28,7 +28,7 @@ export const WaterLevelSlider = ({setWaterLevel, waterLevel}: Props) => {
     }
   ]
   
-  const handleChange = (event: Event, newValue: number | number[]) => {
+  const handleChange = (_event: Event, newValue: number | number[]) => {
     setWaterLevel(newValue as number);
   }
   

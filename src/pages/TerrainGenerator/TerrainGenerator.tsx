@@ -1,9 +1,15 @@
-import { Box, Stack } from '@mui/material';
+import { Box, createTheme, CssBaseline, Stack, ThemeProvider } from '@mui/material';
 import { Stage } from '@pixi/react';
 import { Vector } from './types';
 import { Terrain } from './Terrain';
 import { useState } from 'react';
 import { ControlPanel } from './Controls';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 const stageSize: Vector = {x: 1200, y:600};
 
@@ -17,6 +23,8 @@ const [waterLevel, setWaterLevel] = useState<number>(25);
  
   
 return (
+  <ThemeProvider theme={darkTheme}>
+  <CssBaseline />
   <main style={{display:'flex', justifyContent:'center'}}>
     <Box maxWidth="1200px" display='flex' justifyContent='center'>
     <Stack margin='auto'>
@@ -43,5 +51,6 @@ return (
     </Stack>
     </Box>
     </main>
+    </ThemeProvider>
   );
 }

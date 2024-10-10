@@ -11,7 +11,7 @@ const calculateScale = (value: number) => {
 
 export const FrequencySlider = ({setFrequency, frequency}: Props) => {
   
-  const handleChange = (event: Event, newValue: number | number[]) => {
+  const handleChange = (_event: Event, newValue: number | number[]) => {
     setFrequency(newValue as number);
   }
   

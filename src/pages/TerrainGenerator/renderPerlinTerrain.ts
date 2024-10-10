@@ -45,7 +45,7 @@ export const renderPerlinTerrain = (
       const tile = new Graphics()
       
       const value = perlinNoise2d(x * frequency, y * frequency, gradientVectorGrid);
-      const value2 = Math.floor(Math.abs(value) * 255);
+      //const value2 = Math.floor(Math.abs(value) * 255);
       const value3 = Math.floor(Math.abs(value * 100))
       
       //tile.beginFill({r: value2, g: value2, b: value2});

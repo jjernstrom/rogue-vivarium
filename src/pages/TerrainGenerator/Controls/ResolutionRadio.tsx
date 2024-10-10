@@ -8,7 +8,7 @@ interface Props {
 
 export const ResolutionRadio = ({setMapSize, setTileSize}: Props) => {
   
-  const handleMapSizeChange = (event: React.ChangeEvent<HTMLInputElement>, value: string) => {
+  const handleMapSizeChange = (_event: React.ChangeEvent<HTMLInputElement>, value: string) => {
     switch (value) {
       case "high":
         setMapSize({x:1200, y:600});

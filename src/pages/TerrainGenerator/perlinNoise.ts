@@ -17,9 +17,9 @@ const linearInterpolationWithSmooth = (x: number, a: number, b: number):number =
   return a + smootherstep(x) * (b-a);
 }
 
-const linearInterpolation= (x: number, a: number, b: number):number => {
-  return a + x * (b-a);
-}
+// const linearInterpolation= (x: number, a: number, b: number):number => {
+//   return a + x * (b-a);
+// }
 
 const smootherstep = (x: number) => {
   return 6*x**5 - 15*x**4 + 10*x**3;

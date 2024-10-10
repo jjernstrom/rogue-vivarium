@@ -6,7 +6,6 @@ const dotProduct = (a: Vector, b: Vector) => {
 
 const dotProductGrid = (input: Vector, grid: Vector, gradientVectorGrid: Vector[][]): number => {
   const offsetVector: Vector = {x: input.x - grid.x, y: input.y - grid.y};
- 
   const gradientVector: Vector = gradientVectorGrid[grid.x][grid.y];
 
   return dotProduct(gradientVector, offsetVector);
@@ -26,7 +25,7 @@ const smootherstep = (x: number) => {
 }
 
 export const generateGradientVectorGrid = (size: number) => {
-  let vectors = [];
+  const vectors = [];
 
   const generateRandomGradientVector = () => {
     const theta = Math.random() * 2 * Math.PI;
@@ -34,7 +33,7 @@ export const generateGradientVectorGrid = (size: number) => {
   }
 
   for (let x = 0; x < size; ++x) {
-    let row = [];
+    const row = [];
     for (let y = 0; y < size; ++y) {
       row.push(generateRandomGradientVector());
     }

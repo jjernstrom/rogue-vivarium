@@ -17,9 +17,10 @@ const [waterLevel, setWaterLevel] = useState<number>(25);
  
   
 return (
-    <Box>
-    <div>Terrain Generator</div>
-    <Stack>
+  <main style={{display:'flex', justifyContent:'center'}}>
+    <Box maxWidth="1200px" display='flex' justifyContent='center'>
+    <Stack margin='auto'>
+      <div>Terrain Generator</div>
       <Stage width={stageSize.x} height={stageSize.y}>
         <Terrain 
           generate={generate} 
@@ -41,5 +42,6 @@ return (
       />
     </Stack>
     </Box>
+    </main>
   );
 }

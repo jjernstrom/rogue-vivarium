@@ -20,16 +20,16 @@
   --lightAqua: #8ec07c;
   --fg: #ebdbb2;
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: var(--fg);
   background-color: var(--bg);
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
 
-a {
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
-}
+} */
